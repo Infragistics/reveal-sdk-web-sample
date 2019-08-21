@@ -5,6 +5,14 @@
     <DebugType>full</DebugType>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Dashboards\Marketing.rdash" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Dashboards\Marketing.rdash" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Infragistics.Reveal.Sdk.Web.AspNetCore.Trial" Version="1.0.706" />
@@ -17,7 +25,7 @@
 
 
   <ItemGroup>
-    <Folder Include="Dashboards\" />
+    <Folder Include="wwwroot\Reveal\" />
   </ItemGroup>
 
 </Project>

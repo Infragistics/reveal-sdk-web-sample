@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Marketing";
+}
+
+@section Scripts
+	{
+	<script type="text/javascript">
+		var dashboardId = "Marketing.rdash";
+		var revealSettings = new $.ig.RevealSettings(dashboardId);
+
+		$.ig.RevealUtility.loadDashboard(dashboardId, function (dashboard) {
+			revealSettings.dashboard = dashboard;
+			var revealView = new $.ig.RevealView("#revealView", revealSettings);
+		}, function (error) {
+			//Process any error that might occur here
+		});
+	</script>
+}
+
+<section>
+	<div id="revealView" style="height:800px;"></div>
+</section>

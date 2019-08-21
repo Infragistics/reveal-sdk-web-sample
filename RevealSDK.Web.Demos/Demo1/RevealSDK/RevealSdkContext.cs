@@ -8,11 +8,11 @@ namespace Demo1.RevealSDK
 {
     public class RevealSdkContext : IRevealSdkContext
     {
-        public IRVDataSourceProvider DataSourceProvider => throw new NotImplementedException();
+        public IRVDataSourceProvider DataSourceProvider => null;
 
-        public IRVDataProvider DataProvider => throw new NotImplementedException();
+        public IRVDataProvider DataProvider => null;
 
-        public IRVAuthenticationProvider AuthenticationProvider => throw new NotImplementedException();
+        public IRVAuthenticationProvider AuthenticationProvider => null;
 
         public Task<Stream> GetDashboardAsync(string dashboardId)
         {
