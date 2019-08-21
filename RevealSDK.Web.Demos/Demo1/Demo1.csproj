@@ -15,4 +15,9 @@
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="Dashboards\" />
+  </ItemGroup>
+
 </Project>
