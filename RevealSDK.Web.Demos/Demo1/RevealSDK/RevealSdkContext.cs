@@ -8,7 +8,7 @@ namespace Demo1.RevealSDK
 {
     public class RevealSdkContext : IRevealSdkContext
     {
-        public IRVDataSourceProvider DataSourceProvider => null;
+        public IRVDataSourceProvider DataSourceProvider => new LocalDataSourceProvider();
 
         public IRVDataProvider DataProvider => null;
 

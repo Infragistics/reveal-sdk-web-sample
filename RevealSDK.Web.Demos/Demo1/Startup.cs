@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Demo1.RevealSDK;
@@ -16,9 +17,12 @@ namespace Demo1
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private string _webRootPath;
+
+        public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
             Configuration = configuration;
+            _webRootPath = environment.WebRootPath;
         }
 
         public IConfiguration Configuration { get; }
@@ -38,6 +42,7 @@ namespace Demo1
 
             services.AddRevealServices(new RevealEmbedSettings
             {
+                LocalFileStoragePath = Path.Combine(_webRootPath, "App_Data"),
                 CachePath = @"C:\Temp"
             }, new RevealSdkContext());
 
