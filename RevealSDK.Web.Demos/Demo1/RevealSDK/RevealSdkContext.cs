@@ -8,6 +8,11 @@ namespace Demo1.RevealSDK
 {
     public class RevealSdkContext : IRevealSdkContext
     {
+        // Use these providers when changing data source with SQL Server:
+        // public IRVDataSourceProvider DataSourceProvider => new SqlServerDataSourceProvider();
+        // public IRVDataProvider DataProvider => null;
+        // public IRVAuthenticationProvider AuthenticationProvider => new SqlServerAuthenticationProvider();
+
         public IRVDataSourceProvider DataSourceProvider => new InMemoryDataSourceProvider();
 
         public IRVDataProvider DataProvider => new InMemoryDataProvider();
