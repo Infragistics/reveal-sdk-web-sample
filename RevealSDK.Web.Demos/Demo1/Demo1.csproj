@@ -25,6 +25,8 @@
 
 
   <ItemGroup>
+    <Folder Include="wwwroot\App_Data\" />
+    <Folder Include="wwwroot\img\" />
     <Folder Include="wwwroot\Reveal\" />
   </ItemGroup>
 

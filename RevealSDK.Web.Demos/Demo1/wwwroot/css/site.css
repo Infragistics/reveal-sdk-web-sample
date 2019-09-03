@@ -1,61 +1,4 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
-}
-
-/* Roboto fonts
+﻿/* Roboto fonts
 -------------------------------------------------- */
 
 @font-face {
@@ -76,4 +19,65 @@ body {
 @font-face {
 	font-family: "Roboto-Medium";
 	src: url("Roboto-Medium.ttf");
-} 
+}
+
+/* Header
+-------------------------------------------------- */
+
+header {
+	display: flex;
+	width: 100%;
+	height: 70px;
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+	background-color: #37405a;
+}
+
+img.logo {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	float: left;
+}
+
+span.line {
+	float: left;
+	width: 1px;
+	height: 50px;
+	margin-top: 10px;
+	border: solid 1px #2b2e40;
+}
+
+h1 {
+	float: left;
+	padding-top: 12px;
+	padding-left: 20px;
+	height: 24px;
+	font-family: Roboto-Regular;
+	font-size: 20px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+/* Body
+-------------------------------------------------- */
+body {
+	display: flex;
+	flex-direction: column;
+	background-image: linear-gradient(to bottom, #30365a, #2b2e40);
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+	body section {
+		display: block;
+		width: 100%;
+		height: 100%;
+		padding: 15px;
+	}
+
+#revealView {
+	height: 100%;
+}

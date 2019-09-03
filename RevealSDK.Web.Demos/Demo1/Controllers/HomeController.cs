@@ -12,12 +12,7 @@ namespace Demo1.Controllers
     {
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
+            return RedirectToAction("Marketing");
         }
         
         public IActionResult Marketing()
